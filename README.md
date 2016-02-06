@@ -1,5 +1,6 @@
 # H2OHiveUDF
 ### Predictive Intelligence using H2O inside Hive UDF
+
 ### Original Challenge 
 
 https://github.com/h2oai/coding-challenges/tree/master/deployment/hive_udf
@@ -26,9 +27,9 @@ head -2 fr
 
 head -2 pred
 
-"predict","p0","p1"
+"predict", "p0", "p1"
 
-"1",0.48181779315157247,0.5181822068484275
+"1", 0.48181779315157247, 0.5181822068484275
 
 #### Now we create a table adult_data_set in Hive
 
@@ -47,8 +48,11 @@ iv. write test case to verify H2O prediction and UDF predictions are matching.
 ** In the testcase, the expected value derived from pred record as shown in #3
 
 ** Here we see the UDF-evaluted prediction is matching with expected values !
+
   Assert.assertEquals(1.0, ((Double)doublVals[0]).doubleValue());  - PASS
+  
   Assert.assertEquals(0.4818177, doublVals[1],tolerance); - PASS
+  
   Assert.assertEquals(0.51818, doublVals[2],tolerance); - PASS
 
 #### Write Query to fetch predictions from UDF
