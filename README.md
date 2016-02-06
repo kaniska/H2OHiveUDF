@@ -61,4 +61,4 @@ select score(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) as preds FROM score_table
 
 ### Scope of Improvement
 
-i. Did some RnD , but couldn't yet figure out how can I retirve the individual column values from the multi-valued list/array returned by the UDF.  Actually I need to display preds[0],preds[1],preds[3] and save into another table / csv
+i. Did some RnD , but couldn't yet figure out how can I retirve the individual column values from the multi-valued list/array returned by the UDF.  Actually I need to display preds[0] , preds[1] , preds[3] and save into another table / csv
