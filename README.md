@@ -3,6 +3,8 @@
 
 ### Original Challenge 
 
+Run RScript to build model, create UDF to test the generated Model by verifying predicted values.
+
 https://github.com/h2oai/coding-challenges/tree/master/deployment/hive_udf
 
 ### Steps followed to verify H2O-R prediction matches with USF-Pojo prediction
@@ -33,23 +35,27 @@ head -2 pred
 
 #### 4. Now we create a table adult_data_set in Hive
 
-i.  the H2O hrame csv data imported into the table using HDP-beeswax
+i. Install HortonWorks Data Platform - VM in Mac with proper user/ permissions.
+
+ii. Import H2O frame (test data) into the table using HDP-beeswax
 
 https://github.com/kaniska/H2OHiveUDF/blob/master/scorePrediction/docs/adult_data_set.tiff
 
 #### 5. Create the UDF to generate predictions from H2O Pojo
 
-i. copy the generated pojo model jar into the UDF project's localjars folder
+i. create a maven project in Eclipse IDE
 
-ii. copy the generated pojo model source into UDF project's localjars folder
+ii. copy the previously generated pojo model jar into the UDF project's localjars folder (ref #1)
 
-iii. write the UDF to return the prediction values
+iii. copy the generated pojo model source into UDF project's src folder (ref #1)
+
+iv. write the UDF to return the prediction values
 
 a. Ref : https://github.com/h2oai/h2o-world-2015-training/blob/master/tutorials/hive_udf_template/src/main/java/ai/h2o/hive/udf/ScoreDataUDF.java
 
-iv. write test case to verify H2O prediction and UDF predictions are matching.
+v. write test case to verify H2O prediction and UDF predictions are matching.
 
-** In the testcase, the expected value derived from pred record as shown in #3
+** In the testcase, the expected values are derived from prediction record as shown in #3
 
 ** Here we see the UDF-evaluted prediction is matching with expected values !
 
