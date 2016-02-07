@@ -90,7 +90,7 @@ b. write test case to verify H2O prediction and UDF predictions are matching.
 
 i. use Beewax UI to load the h20_genmodel and scoredata jars
 
-ii. select score(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) as preds FROM score_table
+ii. select score(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) as preds FROM score_table limit 20
 
 iii. 4 map and 4 reduce tasks are spawned to utilize 4 cores.
 
