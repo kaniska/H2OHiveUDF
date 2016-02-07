@@ -45,17 +45,19 @@ ii. copy the generated pojo model source into UDF project's localjars folder
 
 iii. write the UDF to return the prediction values
 
+a. Ref : https://github.com/h2oai/h2o-world-2015-training/blob/master/tutorials/hive_udf_template/src/main/java/ai/h2o/hive/udf/ScoreDataUDF.java
+
 iv. write test case to verify H2O prediction and UDF predictions are matching.
 
 ** In the testcase, the expected value derived from pred record as shown in #3
 
 ** Here we see the UDF-evaluted prediction is matching with expected values !
 
-  Assert.assertEquals(1.0, ((Double)doublVals[0]).doubleValue());  - PASS
+  ##### Assert.assertEquals(1.0, ((Double)doublVals[0]).doubleValue());  - PASS
   
-  Assert.assertEquals(0.4818177, doublVals[1],tolerance); - PASS
+  ##### Assert.assertEquals(0.4818177, doublVals[1],tolerance); - PASS
   
-  Assert.assertEquals(0.51818, doublVals[2],tolerance); - PASS
+  ##### Assert.assertEquals(0.51818, doublVals[2],tolerance); - PASS
 
 #### 6. Generate the UDF jar - ScoreData-1.110-SNAPSHOT.jar
 
