@@ -95,16 +95,17 @@ ii. select score(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) as preds FROM score_ta
 iii. 4 map and 4 reduce tasks are spawned to utilize 4 cores.
 
 https://github.com/kaniska/H2OHiveUDF/blob/master/scorePrediction/docs/hive_udf_query.tiff
-preds
-1
-1
-1
-1
-1
-1
-1
-1
-1
+
+###### preds
+###### 1
+###### 1
+###### 1
+###### 1
+###### 1
+###### 1
+###### 1
+###### 1
+###### 1
 
 ### Issues
 
