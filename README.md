@@ -95,7 +95,17 @@ ii. select score(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) as preds FROM score_ta
 iii. 4 map and 4 reduce tasks are spawned to utilize 4 cores.
 
 https://github.com/kaniska/H2OHiveUDF/blob/master/scorePrediction/docs/hive_udf_query.tiff
+preds
+1
+1
+1
+1
+1
+1
+1
+1
+1
 
 ### Issues
 
-1. Only first column values displayed. Did some RnD , but couldn't manage enough time to figure out - how can I extract the individual column values from the multi-valued list/array returned by the UDF.  Actually I need to display preds[0] , preds[1] , preds[3] and save into another table / csv , but currently only pred[0] is displayed by default.
+1. Only first column values displayed. I did some RnD , but couldn't manage enough to extract the individual column values from the multi-valued list/array returned by the UDF.  Actually I need to display preds[0] , preds[1] , preds[3] and save into another table / csv , but currently only pred[0] is displayed by default.
