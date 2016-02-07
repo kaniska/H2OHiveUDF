@@ -5,7 +5,11 @@
 
 Run RScript to build model, create UDF to test the generated Model by verifying predicted values.
 
-https://github.com/h2oai/coding-challenges/tree/master/deployment/hive_udf
+Rscript generates predictions using 'Gradient Boosted Learning Model' against sample test data.
+
+H2O Rscript also generates reusable POJO model that can be used by any JVM language for training and predictions.
+
+Problem Statement : https://github.com/h2oai/coding-challenges/tree/master/deployment/hive_udf
 
 ### Steps followed to verify H2O-R prediction matches with USF-Pojo prediction
 
@@ -40,6 +44,18 @@ i. Install HortonWorks Data Platform - VM in Mac with proper user/ permissions.
 ii. Import H2O frame (test data) into the table using HDP-beeswax
 
 https://github.com/kaniska/H2OHiveUDF/blob/master/scorePrediction/docs/adult_data_set.tiff
+
+response            	string              	                    
+c1                  	int                 	                    
+c2                  	double              	                    
+c3                  	double              	                    
+c4                  	double              	                    
+c5                  	double              	                    
+c6                  	double              	                    
+c7                  	double              	                    
+c8                  	double              	                    
+c9                  	double              	                    
+c10                 	int   
 
 #### 5. Create the UDF to generate predictions from H2O Pojo
 
